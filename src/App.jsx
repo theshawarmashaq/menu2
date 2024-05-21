@@ -46,6 +46,28 @@ function App() {
     }
     setItem("null");
   };
+  const handlemanchuria=()=>{
+    if (item === "manchuria") {
+      setItem("null");
+    } else {
+      setItem("manchuria");
+    }
+  }
+  const handlenoodle=()=>{
+    if (item === "Noodle") {
+      setItem("null");
+    } else {
+      setItem("Noodle");
+    }
+  }
+  const handlerice=()=>{
+    if (item === "rice") {
+      setItem("null");
+    } else {
+      setItem("rice");
+    }
+  }
+
   
   return (
     <div className="container">
@@ -187,7 +209,7 @@ function App() {
           </div>
           {action === "fastfood" ? (
             <div className="fastfoodblock">
-              <div className="manchuria" onClick={() => setItem("manchuria")}>
+              <div className="manchuria" onClick={handlemanchuria}>
                 <h3>Manchuria</h3>
               </div>
               {item === "manchuria" ? (
@@ -241,7 +263,7 @@ function App() {
                 </div>
               ) : null}
 
-              <div className="Noodle" onClick={() => setItem("Noodle")}>
+              <div className="Noodle" onClick={handlenoodle}>
                 <h3>Noodles</h3>
               </div>
               {item === "Noodle" ? (
@@ -296,7 +318,7 @@ function App() {
               ) : (
                 <div></div>
               )}
-              <div className="rice" onClick={() => setItem("rice")}>
+              <div className="rice" onClick={handlerice}>
                 <h3>Spice Rice</h3>
               </div>
               {item === "rice" ? (
