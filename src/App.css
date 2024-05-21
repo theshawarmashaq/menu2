@@ -100,8 +100,8 @@
   background-color: rgb(14, 9, 9);
   margin: 10px 0px 0px 0px;
 }
-.shawarmaMenu,
-.navmap {
+.shawarmaMenu,.navmap
+{
   height: auto;
   min-width: 300px;
   display: flex;
