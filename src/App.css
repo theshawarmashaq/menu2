@@ -1,38 +1,184 @@
-.App {
+.header,
+.footer {
   text-align: center;
+  font-size: calc(20px + 2vmin);
+  border: 2px solid black;
+  background-color: rgb(14, 9, 9);
+}
+.footer {
+  font-size: calc(8px + 2vmin);
+}
+.container {
+  background: linear-gradient(to right, #e0aa3e99, #faf39899, #e0aa3e99);
+}
+.header h2,
+.footer p {
+  font-family: "ADLaM Display";
+  background: linear-gradient(to right, #e0aa3e, #faf398, #e0aa3e);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.welcome {
+  font-size: calc(30px + 2vmin);
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.welcome h3 {
+  font-size: 35px;
+  font-family: "ADLaM Display";
+}
+.welcome p {
+  font-size: 25px;
+  font-family: "ADLaM Display";
+}
+.menuHeader {
+  display: flex;
+  font-size: calc(15px + 2vmin);
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  cursor: pointer;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  align-items: center;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.shawarma,
+.beverages,
+.fastfood,
+.grill,
+.navigation {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  min-width: 350px;
+  height: 70px;
+  background-color: rgb(14, 9, 9);
+  margin: 10px 0px 0px 0px;
+}
+.navigation i ,
+.contactus i{
+
+}
+.rice,
+.Noodle,
+.manchuria {
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  min-width: 300px;
+  height: 60px;
+  background-color: rgb(14, 9, 9);
+  margin: 10px 0px 0px 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu div > h3,
+.navigation h3
+{
+  font-family: "ADLaM Display";
+  background: linear-gradient(to right, #e0aa3e, #faf398, #e0aa3e);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navigation,
+.contactus {
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  min-width: 350px;
+  height: 70px;
+  background-color: rgb(14, 9, 9);
+  margin: 10px 0px 0px 0px;
+}
+.shawarmaMenu,
+.navmap {
+  height: auto;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(226, 226, 226, 0.87);
+  border-radius: 3px;
+}
+.contactMenu{
+  height: auto;
+  min-width: 300px;
+  align-items: center;
+  height: auto;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgba(226, 226, 226, 0.87);
+  border-radius: 3px;
+  justify-content: center;
+  background-color: rgba(226, 226, 226, 0.87);
+  border-radius: 3px;
+
+}
+.contactMenu a{
+  margin: 15px;
+  text-decoration: none;
+  font-family: "ADLaM Display";
+  color:black;
+  font-size: 20px;
+}
+.navmap img {
+  width: 300px;
+}
+
+.fastfoodblock {
+  display: flex;
+  flex-direction: column;
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.fastfoodmenu {
+  height: auto;
+  min-width: 300px;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(226, 226, 226, 0.87);
+  border-radius: 3px;
+}
+table,
+td,
+th {
+  font-family: "ADLaM Display";
+  padding: 15px;
+  font-size: 20px;
+  color: black;
+}
+* {
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bottom {
+  margin: 0px 25px 0px 25px;
+  text-align: justify;
+  font-size: 15px;
+  font-family: "ADLaM Display";
+}
+.bottom p {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 0px;
 }
